@@ -1,0 +1,40 @@
+<html>
+<body>
+<h1>Visualization using Python and Other Libraries</h1>
+
+<h2>Dataset</h2>
+This Mall Customer Segmentation Data is from Kaggle. Data file is in csv format. There are only four data fields, namely Customer ID, Age, Gender, Annual Income and Spending Score.
+
+<h2>Purpose of the Project</h2>
+In this notebook, I use Python, matplotlib and seaborn identify insights from the data.
+
+After reading the data file, I print out the first few rows to have some sense of the data.
+<img src="head.png"><br><br>
+
+Next, I use a function to show the statistics of numeric fields.<br><br>
+<img src="stat.png"><br><br>
+
+The dataset is very small in size with only 200 samples. Since data is very clear, we can do analysis right away.<br><br>
+<img src="stat.png"><br><br>
+
+First is distribution of the samples by Age.
+<img src="age.png"><br><br>
+
+Most of the customers are in the 30s, followed by 20s. It is interesting to look at average income by age group.
+<img src="income.png"><br><br>
+
+Customers in the 30s also have the highest annual income.
+<img src="scatter.png"><br><br>
+
+Customers having annual income between  $40k − $60k only have medium spending scores. From this scatter plot, we do not see much distinction between male and female.
+<img src="box.png"><br><br>
+
+Customers in the 20s-40s have higher average spending scores than other age groups. Though customers in the 30s have highest annual income, on average, customers in this age group has lower average spending score than the 20s group. These charts illustrate that the mall should focus more on the customers of age between 20-30.
+
+We may also want to know how strong the correlation between age, annual revenue and spending score. We use heatmap to demonstrate the strength of correlation.
+<img src="corr.png"><br><br>
+
+From the heatmap, correlation is not very strong between them. Relatively, age has higher correlation with spending score. The negative value indicates that the higher the age, the lower the spending score. Out of my expectation, the annual income is not highly correlated with spending score.
+
+</body>
+</html>
